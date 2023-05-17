@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/yemekMalzemeText"
+            android:layout_width="251dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="41dp"
+            android:ems="10"
+            android:hint="Yemek Malzemelerini Giriniz"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintStart_toStartOf="@+id/yemekIsmiText"
+            app:layout_constraintTop_toBottomOf="@+id/yemekIsmiText" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="317dp"
+            android:layout_height="172dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="351dp"
+            android:onClick="gorselSec"
+            android:src="@drawable/gorsel_secim"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="TODO" />
+
+        <EditText
+            android:id="@+id/yemekIsmiText"
+            android:layout_width="254dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="31dp"
+            android:ems="10"
+            android:hint="Yemek İsmini Giriniz"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/yemekMalzemeText"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="128dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="92dp"
+            android:onClick="kaydet"
+            android:text="Kaydet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yemekMalzemeText" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="249dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginBottom="7dp"
+            android:text="Görsel Seçmek İçin Tıklayınız"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
